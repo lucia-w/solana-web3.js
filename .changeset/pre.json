@@ -47,6 +47,12 @@
     "@solana/ws-impl": "0.0.0"
   },
   "changesets": [
-    "three-guests-study"
+    "breezy-items-reflect",
+    "green-experts-hang",
+    "heavy-students-relax",
+    "metal-radios-switch",
+    "thick-radios-search",
+    "three-guests-study",
+    "wild-lobsters-kick"
   ]
 }

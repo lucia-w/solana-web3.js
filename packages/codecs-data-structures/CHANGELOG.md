@@ -1,5 +1,23 @@
 # @solana/codecs-data-structures
 
+## 2.0.0-preview.3
+
+### Patch Changes
+
+-   [#2344](https://github.com/solana-labs/solana-web3.js/pull/2344) [`deb7b80`](https://github.com/solana-labs/solana-web3.js/commit/deb7b806b4cbe620b1714be1765c981d88c3a2f6) Thanks [@lorisleiva](https://github.com/lorisleiva)! - Improve `getTupleCodec` type inferences and performance
+
+    The tuple codec now infers its encoded/decoded type from the provided codec array and uses the new `DrainOuterGeneric` helper to reduce the number of TypeScript instantiations.
+
+-   [#2322](https://github.com/solana-labs/solana-web3.js/pull/2322) [`6dcf548`](https://github.com/solana-labs/solana-web3.js/commit/6dcf5483bb6bbb8d343db28dedb258c8da91ffac) Thanks [@lorisleiva](https://github.com/lorisleiva)! - Use `DrainOuterGeneric` helper on codec type mappings
+
+    This significantly reduces the number of TypeScript instantiations on object mappings,
+    which increases TypeScript performance and prevents "Type instantiation is excessively deep and possibly infinite" errors.
+
+-   Updated dependencies [[`9370133`](https://github.com/solana-labs/solana-web3.js/commit/9370133e414bfa863517248d97905449e9a867eb), [`2d54650`](https://github.com/solana-labs/solana-web3.js/commit/2d5465018d8060eceb00efbf4f718df26d145199), [`478443f`](https://github.com/solana-labs/solana-web3.js/commit/478443fedac06678f12e8ac285aa7c7fcf503ee8)]:
+    -   @solana/errors@2.0.0-preview.3
+    -   @solana/codecs-core@2.0.0-preview.3
+    -   @solana/codecs-numbers@2.0.0-preview.3
+
 ## 2.0.0-preview.2
 
 ### Patch Changes
